@@ -11,7 +11,7 @@ namespace LevelImposter.Shop
     /// </summary>
     public static class GitHubAPI
     {
-        public const string API_PATH = "https://api.github.com/repos/DigiWorm0/LevelImposter/releases?per_page=5";
+        public const string API_PATH = "https://api.github.com/repos/Xslash58/LevelImposter-Twitch/releases?per_page=5";
         public const string UPDATE_FORBIDDEN_FLAG = "[NoAutoUpdate]";
         public const string DEV_VERSION_FLAG = "dev";
 
@@ -86,7 +86,7 @@ namespace LevelImposter.Shop
         public static bool IsCurrent(GHRelease release)
         {
             string versionString = release.name.Split(" ")[1];
-            return versionString == LevelImposter.Version || LevelImposter.Version.Contains(DEV_VERSION_FLAG);
+            return versionString == LevelImposter.DisplayVersion || LevelImposter.DisplayVersion.Contains(DEV_VERSION_FLAG);
         }
 
         /// <summary>
