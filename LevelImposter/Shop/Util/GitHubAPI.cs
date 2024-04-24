@@ -11,7 +11,7 @@ namespace LevelImposter.Shop
     /// </summary>
     public static class GitHubAPI
     {
-        public const string API_PATH = "https://api.github.com/repos/DigiWorm0/LevelImposter/releases?per_page=5";
+        public const string API_PATH = "https://api.github.com/repos/Xslash58/LevelImposter-Twitch/releases?per_page=5";
         public const string UPDATE_FORBIDDEN_FLAG = "[NoAutoUpdate]";
         public const string DEV_VERSION_FLAG = "dev";
 
